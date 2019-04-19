@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:qmui_layout_collapseMode="pin"
+        app:qmui_topbar_bg_color="@color/app_main_show_blue"
+        app:qmui_topbar_need_separator="false"
+        android:fitsSystemWindows="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Feedback"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeff0"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Details:"/>
+            <!--Choose the feedback type:-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:background="@color/app_main_white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <CheckBox
+                    android:id="@+id/advice"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/checkbox_selector_model"
+                    android:drawablePadding="5dp"
+                    android:background="@android:color/transparent"
+                    android:text="Advice" />
+                <CheckBox
+                    android:id="@+id/bugs"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/checkbox_selector_model"
+                    android:drawablePadding="5dp"
+                    android:background="@android:color/transparent"
+                    android:text="Bugs" />
+                <CheckBox
+                    android:id="@+id/errors"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/checkbox_selector_model"
+                    android:drawablePadding="5dp"
+                    android:background="@android:color/transparent"
+                    android:text="Errors" />
+            </LinearLayout>
+
+                <EditText
+                    android:id="@+id/serial_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="left|center"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:maxLength="15"
+                    android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:hint="Serial number"
+                    android:backgroundTint="#ffffff"
+                    android:background="@drawable/background_border_all" />
+                <EditText
+                    android:id="@+id/baud_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="left|center"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:hint="Baud rate"
+                    android:backgroundTint="#ffffff"
+                    android:background="@drawable/background_border_all" />
+                <EditText
+                    android:id="@+id/device_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="left|center"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:maxLines="1"
+                    android:hint="Device name"
+                    android:backgroundTint="#ffffff"
+                    android:background="@drawable/background_border_all" />
+
+            <EditText
+                android:id="@+id/suggest_message"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="left|top"
+                android:layout_marginBottom="16dp"
+                android:paddingLeft="8dp"
+                android:maxLength="200"
+                android:hint="Please give us your feedback and we will keep improving your user experience."
+                android:backgroundTint="#ffffff"
+                android:background="@drawable/background_border_all" />
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bottom_selector_radius"
+                android:textColor="#FFFFFF"
+                android:text="Submit"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

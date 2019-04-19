@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/share_y"
+        android:title="@string/title_home" />-->
+
+    <item
+        android:id="@+id/tab_add1"
+        android:icon="@drawable/print"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/tab_add2"
+        android:icon="@drawable/commin_n"
+        android:title="@string/title_notifications" />
+
+    <item
+        android:id="@+id/tab_add3"
+        android:icon="@drawable/my"
+        android:title="@string/title_me" />
+
+</menu>

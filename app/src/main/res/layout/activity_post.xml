@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:qmui_layout_collapseMode="pin"
+        app:qmui_topbar_bg_color="@color/app_main_show_blue"
+        app:qmui_topbar_need_separator="false"
+        android:fitsSystemWindows="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Register"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_main_black"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_main_black"
+            android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center">
+
+                    <com.geeetech.administrator.easyprint.CircleImageView
+                        android:id="@+id/img_username"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_logo" />
+                </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/shape_corner"
+                android:backgroundTint="@color/tab_unchecked"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_48_sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:src="@drawable/icon_username" />
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/tab_unchecked"
+                        android:maxLines="1"
+                        android:maxLength="15"
+                        android:inputType="text"
+                        android:hint="@string/username_tip"
+                        android:textColorHint="#ababab"
+                        android:textSize="15dp"
+                        android:textColor="@color/app_main_white" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_main_white">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_48_sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:src="@drawable/icon_email" />
+
+                    <EditText
+                        android:id="@+id/user_email"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/tab_unchecked"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:hint="@string/email_tip"
+                        android:textColorHint="#ababab"
+                        android:textSize="15dp"
+                        android:textColor="@color/app_main_white" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_main_white">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_48_sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:src="@drawable/icon_password" />
+
+                    <EditText
+                        android:id="@+id/user_password"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/tab_unchecked"
+                        android:maxLines="1"
+                        android:maxLength="24"
+                        android:hint="@string/password_tip"
+                        android:textColorHint="#ababab"
+                        android:textSize="15dp"
+                        android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&amp;*()_+[]{};:,"
+                        android:textColor="@color/app_main_white" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_main_white">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_48_sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:src="@drawable/icon_password" />
+
+                    <EditText
+                        android:id="@+id/user_password2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/tab_unchecked"
+                        android:maxLines="1"
+                        android:maxLength="24"
+                        android:hint="@string/password_tip2"
+                        android:textColorHint="#ababab"
+                        android:textSize="15dp"
+                        android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&amp;*()_+[]{};:,"
+                        android:textColor="@color/app_main_white" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_main_white">
+
+                </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_48_sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:src="@drawable/icon_map" />
+
+                    <TextView
+                        android:id="@+id/user_area"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:background="@color/tab_unchecked"
+                        android:maxLines="1"
+                        android:textColor="@color/app_main_white" />
+                </LinearLayout>
+            </LinearLayout>
+                <Button
+                    android:id="@+id/button_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/shape_corner"
+                    android:textColor="#FFFFFF"
+                    android:text="Register Now"/>
+
+            <!--<EditText
+                android:id="@+id/response"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:enabled="true"
+                android:gravity="top"
+                android:minLines="8"
+                android:maxLines="10"
+                android:textColor="@color/app_main_white"
+                android:scrollbars="vertical" />
+            <EditText
+                android:id="@+id/response2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:enabled="true"
+                android:gravity="top"
+                android:minLines="8"
+                android:maxLines="10"
+                android:textColor="@color/app_main_white"
+                android:scrollbars="vertical" />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

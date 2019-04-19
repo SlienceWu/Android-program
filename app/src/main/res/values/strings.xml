@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">EasyPrint 3D</string>
+    <!--<string name="title_home">Buzz</string>-->
+    <string name="title_dashboard">Print</string>
+    <string name="title_notifications">Gallery</string>
+    <string name="title_me">Me</string>
+
+    <!--Network warming-->
+    <string name="network_tips">The network is not awesome, please check the network settings.</string>
+    <string name="network_tip">Internet connection is not available.</string>
+    <string name="server_tip">Server connection is not available.</string>
+    <string name="rout_tip">Routing connection is not available.</string>
+    
+    <!--Gallary-->
+    <string name="gallary_top_1">Cloud</string>
+    <string name="gallary_top_2">SD card</string>
+    <string name="gallary_top_3">3DWiFi</string>
+
+    <!--My-->
+    <string name="my_top_two_1">Printers</string>
+    <string name="my_top_two_2">3D printer</string>
+    <string name="my_top_three_1">Printer profile</string>
+    <string name="my_top_three_2">Printer Setup</string>
+    <string name="my_top_four_1">Material profile</string>
+    <string name="my_top_four_2">Material Setup</string>
+
+    <!--注册-->
+    <string name="username_tip">user name(3-15 numbers or letters only)</string>
+    <string name="email_tip">valid email address</string>
+    <string name="password_tip">password(7-24 numbers or letters only)</string>
+    <string name="password_tip2">Confirm the password</string>
+
+    <string-array name="choose_profile">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!--广告页-->
+    <string name="progressActivityErrorButton">Reload...</string><!--重新加载-->
+    <string name="progressActivityEmptyTitlePlaceholder">Not loaded to any content!</string><!--未加载到任何内容!-->
+    <string name="progressActivityEmptyContentPlaceholder">We couldn\'t find anything. Tap the button to take your first image</string>
+    <string name="progressActivityErrorTitlePlaceholder">No Connection</string>
+    <string name="progressActivityErrorContentPlaceholder">The network does not give force, the load fails.</string><!--网络不给力哦，加载失败-->
+
+    <!--Wifi-->
+    <string name="wifi_search">Make sure that your phone is connected with GT_printer hotspot.</string>
+    <string name="wifi_name">Please enter the WLAN name</string>
+    <string name="wifi_password">Please enter the password</string>
+
+    <!--printer profile-->
+    <string name="bed_shape">Bed Shape&amp;Size</string>
+    <string-array name="choose_shape">
+        <item>Rectangle</item>
+        <item>Circular</item>
+    </string-array>
+    <!--material profile-->
+    <string-array name="choose_diameter">
+        <item>1.75</item>
+        <item>3</item>
+    </string-array>
+    <!--  Move -->
+    <string-array name="choose_z">
+        <item>1</item>
+        <item>10</item>
+        <item>50</item>
+    </string-array>
+    <!--Baud rate-->
+    <string-array name="choose_baud_rate">
+        <item>115200</item>
+        <item>250000</item>
+        <item>256000</item>
+    </string-array>
+    <!--Model Detail-->
+    <string name="model_detail_1">1.Choose Your Printer</string>
+    <string name="model_detail_2">2.Choose Your Printer Profile</string>
+    <string name="model_detail_3">3.Choose Your Material</string>
+    <string name="model_detail_4">4.Choose Your Print Quality</string>
+    <string name="model_detail_5">5.Model Scale</string>
+    <!--about-->
+    <string name="about_note">"Note: 3D WiFi module comes in two versions. It's easy to distinguish with its production date, as shown in the serial number. The one produced before 180621xxxxxxxx is the old version, with the one after 180621xxxxxx as the new version. Correspondingly, the old 3D WiFi module uses the old EasyPrint 3D App; the new 3D WiFi module with new App.
+For A30 and E180 with built-in Wi-Fi feature, please use the old EasyPrint 3D App."</string>
+    <!--tcp controll-->
+    <string name="tcp_tips">wifi is disconnected</string>
+    <!--IP-->
+    <string-array name="choose_ip">
+        <item>rote 1</item>
+        <item>rote 2</item>
+    </string-array>
+</resources>

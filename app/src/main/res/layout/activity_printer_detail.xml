@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:qmui_layout_collapseMode="pin"
+        app:qmui_topbar_bg_color="@color/app_main_show_blue"
+        app:qmui_topbar_need_separator="false"
+        android:fitsSystemWindows="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/my_top_two_2"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeff0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.geeetech.administrator.easyprint.CircleImageView
+                android:id="@+id/circle_img"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginVertical="20dp"
+                android:src="@mipmap/icon_3dwifi"/>
+
+            <ImageView
+                android:id="@+id/circle_img_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="25dp"
+                android:src="@mipmap/icon_camera"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48_sp"
+            android:paddingHorizontal="12dp"
+            android:background="@drawable/background_border_bottom"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Name:"/>
+            <TextView
+                android:id="@+id/printer_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:lines="1"
+                android:maxLength="21"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:text=""/>
+            <ImageView
+                android:id="@+id/edit_name"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_edit"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48_sp"
+            android:paddingHorizontal="12dp"
+            android:background="@drawable/background_border_bottom"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Serial No.:"/>
+            <TextView
+                android:id="@+id/printer_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_delete_print"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bottom_selector_radius"
+            android:textColor="#FFFFFF"
+            android:text="Unbind"/>
+
+        <EditText
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

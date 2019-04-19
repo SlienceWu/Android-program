@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:qmui_layout_collapseMode="pin"
+        app:qmui_topbar_bg_color="@color/app_main_show_blue"
+        app:qmui_topbar_need_separator="false"
+        android:fitsSystemWindows="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/my_top_four_2"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/printer_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="对应打印机序列号"
+                android:gravity="left|center" />
+            <EditText
+                android:id="@+id/test_res"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:hint="响应结果"/>
+        </LinearLayout>
+
+        <com.qmuiteam.qmui.widget.QMUITabSegment
+            android:id="@+id/tabs"
+            android:layout_gravity="bottom"
+            android:background="?attr/qmui_list_item_bg_with_border_top"
+            android:textSize="12sp"
+            app:qmui_tab_icon_position="top"
+            app:qmui_tab_has_indicator="true"
+            app:qmui_tab_indicator_height="2dp"
+            android:layout_width="match_parent"
+            app:qmui_tab_indicator_top="true"
+            android:layout_height="49dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/get_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/shape_corner"
+                    android:textColor="#FFFFFF"
+                    android:text="+ Get Number List"/>
+                <Button
+                    android:id="@+id/get_profile_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/shape_corner"
+                    android:textColor="#FFFFFF"
+                    android:text="+ Get Profile List"/>
+                <Button
+                    android:id="@+id/get_profile_detail_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/shape_corner"
+                    android:textColor="#FFFFFF"
+                    android:text="+ Get Profile Detail List"/>
+                <Button
+                    android:id="@+id/get_material_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/shape_corner"
+                    android:textColor="#FFFFFF"
+                    android:text="+ Get Material List"/>
+                <Button
+                    android:id="@+id/get_material_detail_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/shape_corner"
+                    android:textColor="#FFFFFF"
+                    android:text="+ Get Material Detail List"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/v4_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/v4_drawerlayout_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.geeetech.administrator.easyprint.MainActivity"
+            android:theme="@style/AppTheme">
+        <LinearLayout
+            android:id="@+id/topMaintopbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/linearlayout_top"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/app_main_show_blue"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/img_controll_drawer"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_menu_on" />
+
+                <TextView
+                    android:id="@+id/printer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_main_white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/Maintopbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/app_main_show_blue"
+                android:gravity="center"
+                android:text="Print"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/network"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/hotpink"
+                android:gravity="center"
+                android:text="@string/network_tip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topMaintopbar" />
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:itemIconTint="@drawable/bottom_navigation_selector"
+            app:itemTextColor="@drawable/bottom_navigation_selector"
+            app:menu="@menu/navigation" />
+
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/id_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center|left"
+            android:paddingLeft="16dp"
+            android:orientation="horizontal"
+            android:background="@color/app_main_show_blue">
+            <!--@drawable/model_scroll_1-->
+            <com.geeetech.administrator.easyprint.CircleImageView
+                android:id="@+id/person_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/icon_logo" />
+
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:textSize="20dp"
+                android:textColor="@color/app_main_white"
+                android:text="Log in" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/v4_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:choiceMode="singleChoice" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

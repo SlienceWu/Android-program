@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:qmui_layout_collapseMode="pin"
+        app:qmui_topbar_bg_color="@color/app_main_show_blue"
+        app:qmui_topbar_need_separator="false"
+        android:fitsSystemWindows="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/my_top_three_2"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48_sp"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="Name" />
+            <EditText
+                android:id="@+id/printer_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:lines="1"
+                android:background="@drawable/background_border_all"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48_sp"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="Bed Shape Size"/>
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/background_border_all"
+            android:entries="@array/choose_profile"></Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48_sp"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="Nozzle Diameter" />
+            <EditText
+                android:id="@+id/diameter_num"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:lines="1"
+                android:background="@drawable/background_border_all"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48_sp"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="No.of extruders" />
+            <EditText
+                android:id="@+id/extruder_num"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:lines="1"
+                android:background="@drawable/background_border_all"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_add_print"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/bottom_selector_radius"
+            android:textColor="#FFFFFF"
+            android:text="+ Test Change "/>
+        <EditText
+            android:id="@+id/response"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:enabled="true"
+            android:gravity="top"
+            android:minLines="8"
+            android:maxLines="10"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+</LinearLayout>

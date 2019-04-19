@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/banner_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--<ImageView
+                        android:id="@+id/imageView_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="192dp"
+                        android:src="@drawable/model_scroll_1" />-->
+                    <com.youth.banner.Banner
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="192dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#eeeff0"></View>
+
+                <ImageView
+                    android:id="@+id/imageView_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/app_model" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#eeeff0"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView_model_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:src="@drawable/icon_3d_print" />
+                            <TextView
+                                android:id="@+id/text_list_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="3D Print"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView_model_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:src="@drawable/icon_art" />
+                            <TextView
+                                android:id="@+id/text_list_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="Art"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView_model_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:src="@drawable/icon_education" />
+                            <TextView
+                                android:id="@+id/text_list_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="Education"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView_model_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:src="@drawable/icon_fashion" />
+                            <TextView
+                                android:id="@+id/text_list_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="Fashion"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView_model_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:src="@drawable/icon_gadget" />
+                            <TextView
+                                android:id="@+id/text_list_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="Gadget"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView_model_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:src="@drawable/icon_hobby" />
+                            <TextView
+                                android:id="@+id/text_list_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="Hobby"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView_model_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:src="@drawable/icon_household" />
+                            <TextView
+                                android:id="@+id/text_list_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="Household"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView_model_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:src="@drawable/icon_tools" />
+                            <TextView
+                                android:id="@+id/text_list_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="Tools"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView_model_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="88dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:src="@drawable/icon_toys_games" />
+                            <TextView
+                                android:id="@+id/text_list_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="Toys Games"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

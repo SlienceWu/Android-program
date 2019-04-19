@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/background_border_bottom">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_8_sp"
+                    android:background="@color/app_main_hui"></View>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/height_48_sp"
+                        android:layout_height="@dimen/height_48_sp"
+                        android:layout_marginLeft="@dimen/margin_left_8_sp"
+                        android:padding="@dimen/padding_8_sp"
+                        android:src="@drawable/gallary_file" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_48_sp"
+                        android:layout_marginLeft="@dimen/margin_left_8_sp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="3DWiFi" />
+
+                    <ImageView
+                        android:id="@+id/list_refresh"
+                        android:layout_width="@dimen/height_48_sp"
+                        android:layout_height="@dimen/height_48_sp"
+                        android:padding="12dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/icon_refresh" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+</RelativeLayout>

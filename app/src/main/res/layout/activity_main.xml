@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geeetech.administrator.easyprint.MainActivity"
+    android:theme="@style/AppTheme">
+    <!--<com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/Maintopbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:qmui_layout_collapseMode="pin"
+        app:qmui_topbar_bg_color="@color/app_main_show_blue"
+        app:qmui_topbar_need_separator="false"
+        android:fitsSystemWindows="true" />-->
+
+        <LinearLayout
+            android:id="@+id/topMaintopbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Maintopbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/app_main_show_blue"
+                android:gravity="center"
+                android:text="Print"
+                android:visibility="gone"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/network"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/hotpink"
+                android:gravity="center"
+                android:text="@string/network_tip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topMaintopbar" />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:itemIconTint="@drawable/bottom_navigation_selector"
+            app:itemTextColor="@drawable/bottom_navigation_selector"
+            app:menu="@menu/navigation" />
+
+    <!--<View
+    ?android:attr/windowBackground
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/navigation"
+        android:background="@drawable/bottom_shadow" />-->
+
+</android.support.constraint.ConstraintLayout>
